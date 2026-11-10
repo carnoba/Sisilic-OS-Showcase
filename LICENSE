@@ -1,0 +1,32 @@
+Sisilic OS — Proprietary Software License (Showcase Distribution)
+
+Copyright (c) 2026 Sisilic OS Maintainer. All rights reserved.
+
+This repository is a PUBLIC SHOWCASE and RELEASE DISTRIBUTION package for
+Sisilic OS — Enterprise Supply Chain & BOM Dependency Mapping Engine.
+
+NO SOURCE CODE is included in this repository. This showcase contains only:
+- Documentation and architecture specifications
+- Sample BOM test templates (CSV/XLSX)
+- Dependency visibility (requirements.txt)
+- The official v1.0.0-MVP standalone installer (GitHub Release asset)
+
+This software is proprietary. All rights reserved.
+
+No license is granted for:
+- Commercial redistribution, sublicensing, or resale
+- Decompilation, reverse engineering, or modification of the installer
+- Extraction or use of any proprietary algorithms, schemas, or backend logic
+
+The sample BOM templates in sisilic_test_data/ are provided for evaluation
+and demonstration purposes only.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+For commercial licensing inquiries, contact the maintainer privately.

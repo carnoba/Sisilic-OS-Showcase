@@ -1,0 +1,60 @@
+# ============================================================
+# Sisilic OS Showcase Repository - STRICT SOURCE CODE EXCLUSION
+# ============================================================
+# This is a PUBLIC SHOWCASE / RELEASE DISTRIBUTION repository.
+# NO Python source code or proprietary backend logic is ever committed here.
+
+# --- ALL Python source code (STRICTLY EXCLUDED) ---
+*.py
+*.pyc
+*.pyo
+__pycache__/
+.pytest_cache/
+
+# --- Backend packages (STRICTLY EXCLUDED) ---
+qt_app/
+engine/
+engines/
+security/
+tools/
+
+# --- Entry points (STRICTLY EXCLUDED) ---
+main.py
+run_app.py
+app_launcher.py
+desktop_app.py
+convert_to_docx.py
+generate_enterprise_dataset.py
+
+# --- Build scripts (STRICTLY EXCLUDED) ---
+*.spec
+*.iss
+
+# --- Secrets & runtime artifacts (STRICTLY EXCLUDED) ---
+.env
+.env.*
+!.env.example
+*.db
+*.lic
+*.log
+
+# --- Confidential founder documents (STRICTLY EXCLUDED) ---
+build_founder_docs.py
+verify_founder_docs.py
+*_Founders_Agreement.docx
+*_Mutual_NDA.docx
+*_IP_Assignment_Agreement.docx
+
+# --- Build outputs & installers (handled via GitHub Release assets only) ---
+build/
+dist/
+Output/
+installer/
+*.exe
+*.zip
+
+# --- Editor / OS files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

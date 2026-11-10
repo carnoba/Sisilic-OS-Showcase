@@ -1,0 +1,5 @@
+MPN,Manufacturer,Quantity,Reference,Value,Description,Customer_Part
+CC1206MKX5R5BB107,Yageo,2,"C2,C4",100uF,MLCC Capacitor,CUST-CAP-001
+GRM188C80G106KE47D,Murata,7,"C1,C8,C25,C29,C31",10uF,MLCC Capacitor,CUST-CAP-002
+STM32F407VGT6,STMicroelectronics,1,"U1",ARM Cortex-M4 MCU,CUST-IC-003
+PPTC081LFBN-RC,Sullins,2,"A1",DRV8825 socket,Pololu Breakout Header,CUST-HDR-004
