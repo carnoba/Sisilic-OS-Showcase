@@ -58,6 +58,27 @@ Release: [v1.0.0-MVP — Sisilic OS v1.0.0 MVP Standalone Installer](https://git
 - Python 3.10+ (bundled with installer via PyInstaller)
 - PostgreSQL 15+ (optional; SQLite fallback available for development)
 
+## 🔑 Licensing & Software Activation
+
+Sisilic OS uses **node-locked offline licensing** bound to each device's Hardware ID (HWID). The standalone `.exe` installer will not run without a valid `sisilic_license.lic` file.
+
+### How Activation Works
+
+1. Install Sisilic OS using `SisilicOS_Setup_v1.0.0.exe` (GitHub Release asset).
+2. On first launch, the application generates a 32-character HWID from your machine's CPU, motherboard, and network identifiers.
+3. Place a valid `sisilic_license.lic` file in `%APPDATA%\SisilicOS\`.
+4. The application verifies the license signature and HWID binding before enabling full functionality.
+
+### Requesting a Demo Activation Key
+
+Prospective evaluators, judges, and clients should contact the repository owner to request a demo activation key:
+
+**Syed Muhammad Haris**
+Repository Owner, Sisilic OS
+GitHub: https://github.com/carnoba
+
+Include your machine's HWID in your request so a signed, HWID-locked license file can be generated for your specific device.
+
 ## Sample BOM Templates
 
 The `sisilic_test_data/` directory contains standard BOM templates for testing and demonstration:
