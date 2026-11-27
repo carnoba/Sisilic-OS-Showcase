@@ -1,0 +1,35 @@
+line,designators,customer_part,mpn,manufacturer,product,facility,quantity,unit_cost_usd,lead_time_weeks,lifecycle_status,source_type,single_source,notes
+1,U1,FC4200-U01,STM32H743ZIT6,STMicroelectronics,AI Drone Flight Controller FC-4200,STMicroelectronics Crolles 300mm,1,21.400,26,Active,Authorized Disti,NO,Main MCU - 480 MHz Cortex-M7
+2,U2,FC4200-U02,TPS54302DDCR,Texas Instruments,AI Drone Flight Controller FC-4200,TI Sherman Fabrication,2,1.850,12,Active,Authorized Disti,NO,3A synchronous buck
+3,U3,FC4200-U03,TPS7A4700RGWR,Texas Instruments,AI Drone Flight Controller FC-4200,TI Sherman Fabrication,1,4.600,14,Active,Authorized Disti,NO,Low-noise 1A LDO for RF rail
+4,U4,FC4200-U04,BMI088,Bosch Sensortec,AI Drone Flight Controller FC-4200,Bosch Dresden Fab,1,6.200,18,Active,Authorized Disti,NO,6-axis IMU (accel + gyro)
+5,U5,FC4200-U05,ADIS16470AMLZ,Analog Devices,AI Drone Flight Controller FC-4200,ADI Wilmington Fab,1,295.000,36,NRND,Direct / Franchised,YES,"Tactical-grade IMU - sole source, 36wk lead"
+6,U6,FC4200-U06,ZED-F9P-01B,u-blox,AI Drone Flight Controller FC-4200,TSMC Fab 14,1,185.000,30,Active,Direct / Franchised,YES,"RTK GNSS module - single-source, allocation risk"
+7,U7,FC4200-U07,BSC010N04LS,Infineon Technologies,AI Drone Flight Controller FC-4200,Infineon Dresden Fab 1,4,3.150,20,Active,Authorized Disti,NO,40V N-channel MOSFET - motor bridge
+8,U8,FC4200-U08,BSS138-7-F,Diodes Incorporated,AI Drone Flight Controller FC-4200,Diodes Fab (Greenock),6,0.090,8,Active,Authorized Disti,NO,Level-shift FET
+9,U9,FC4200-U09,SN74LVC1T45DBVR,Texas Instruments,AI Drone Flight Controller FC-4200,TI Sherman Fabrication,8,0.220,10,Active,Authorized Disti,NO,Bi-directional voltage translator
+10,U10,FC4200-U10,IS61WV51216BLL-10TLI,ISSI,AI Drone Flight Controller FC-4200,TSMC Fab 12A,2,12.800,24,Active,Authorized Disti,YES,512K x16 SRAM - sole source
+11,U11,FC4200-U11,W25Q128JVSIQ,Winbond,AI Drone Flight Controller FC-4200,Winbond Fab 1,1,2.350,16,Active,Authorized Disti,NO,128 Mbit SPI NOR flash
+12,U12,FC4200-U12,LAN8720A-CP-TR,Microchip Technology,AI Drone Flight Controller FC-4200,TSMC Fab 14,1,3.100,22,NRND,Authorized Disti,NO,"10/100 PHY - NRND, last-time-buy planning"
+13,U13,FC4200-U13,USB3320C-EZK,Microchip Technology,AI Drone Flight Controller FC-4200,TSMC Fab 14,1,4.750,24,Active,Authorized Disti,NO,USB 2.0 ULPI transceiver
+14,U14,FC4200-U14,MAX3232ESE+,Analog Devices,AI Drone Flight Controller FC-4200,ADI Wilmington Fab,2,1.950,14,Active,Authorized Disti,NO,RS-232 transceiver (Maxim line)
+15,U15,FC4200-U15,TPS2116ADRGT,Texas Instruments,AI Drone Flight Controller FC-4200,TI Sherman Fabrication,1,1.400,12,Active,Authorized Disti,NO,Power-path / load switch
+16,U16,FC4200-U16,LMV331IDBVR,Texas Instruments,AI Drone Flight Controller FC-4200,TI Sherman Fabrication,3,0.180,8,Active,Authorized Disti,NO,Low-power comparator
+17,U17,FC4200-U17,MIC5219-3.3YMM-TR,Microchip Technology,AI Drone Flight Controller FC-4200,TSMC Fab 12A,2,0.550,10,Active,Authorized Disti,NO,500mA LDO
+18,D1,FC4200-D01,PESD5V0S1BA,Nexperia,AI Drone Flight Controller FC-4200,Nexperia Fab Hamburg,4,0.120,8,Active,Authorized Disti,NO,ESD protection diode
+19,D2,FC4200-D02,SMAJ5.0A,Littelfuse,AI Drone Flight Controller FC-4200,Littelfuse Fab,2,0.280,12,Active,Authorized Disti,NO,Transient suppressor
+20,Q1,FC4200-Q01,SI2301ADS-T1-GE3,Vishay Siliconix,AI Drone Flight Controller FC-4200,Vishay Siliconix Fab,3,0.320,10,Active,Authorized Disti,NO,P-channel load switch FET
+21,R1,FC4200-R01,RC0402FR-0710KL,Yageo,AI Drone Flight Controller FC-4200,Yageo Kaohsiung Fab,24,0.003,6,Active,Authorized Disti,NO,0402 10k 1% resistor
+22,R2,FC4200-R02,CRCW04021K00FKED,Vishay Dale,AI Drone Flight Controller FC-4200,Vishay Dale Fab,18,0.006,7,Active,Authorized Disti,NO,0402 1k 1% resistor
+23,C1,FC4200-C01,GRM155R71C104KA88D,Murata,AI Drone Flight Controller FC-4200,Murata Kyoto Fab,36,0.008,6,Active,Authorized Disti,NO,0402 100nF X7R MLCC
+24,C2,FC4200-C02,CC0402KRX7R9BB102,Yageo,AI Drone Flight Controller FC-4200,Yageo Kaohsiung Fab,28,0.004,6,Active,Authorized Disti,NO,0402 1nF X7R MLCC
+25,C3,FC4200-C03,04025A103KAT2A,AVX Corporation,AI Drone Flight Controller FC-4200,AVX (Kyocera) Fab,12,0.014,8,NRND,Authorized Disti,NO,0402 10nF C0G - NRND
+26,C4,FC4200-C04,EKYB350ETD102MJ16S,United Chemi-Con,AI Drone Flight Controller FC-4200,United Chemi-Con Fab,4,0.380,14,Active,Authorized Disti,NO,35V 1000uF electrolytic
+27,L1,FC4200-L01,SPRM4030-100M,Coilcraft,AI Drone Flight Controller FC-4200,Coilcraft Cary Fab,2,1.250,12,Active,Authorized Disti,NO,Shielded 10uH power inductor
+28,L2,FC4200-L02,LQG18HN1R0N00D,Murata,AI Drone Flight Controller FC-4200,Murata Kyoto Fab,6,0.180,10,Active,Authorized Disti,NO,1uH RF inductor
+29,Y1,FC4200-Y01,ABS07-32.768KHZ-T,Abracon,AI Drone Flight Controller FC-4200,Abracon Fab,1,0.420,10,Active,Authorized Disti,NO,RTC crystal 32.768 kHz
+30,Y2,FC4200-Y02,NX3225SA-16MHZ,NDK,AI Drone Flight Controller FC-4200,NDK Fab,1,0.850,18,EOL,Broker / Last-time-buy,YES,16 MHz oscillator - EOL sole source
+31,J1,FC4200-J01,505565-0470,Molex,AI Drone Flight Controller FC-4200,Molex Lincolnshire Fab,1,3.400,12,Active,Authorized Disti,NO,47-position board-to-board connector
+32,J2,FC4200-J02,FTSH-105-01-L-DV,Samtec,AI Drone Flight Controller FC-4200,Samtec New Albany Fab,1,2.700,16,Active,Authorized Disti,NO,10-position header
+33,U18,FC4200-U18,SX1262IMLTRT,Semtech,AI Drone Flight Controller FC-4200,TSMC Fab 14,1,8.900,34,NRND,Direct / Franchised,YES,"LoRa transceiver - sole source, 34wk"
+34,U19,FC4200-U19,DRV8313PWPR,Texas Instruments,AI Drone Flight Controller FC-4200,TI Sherman Fabrication,1,4.200,20,Active,Authorized Disti,NO,3-phase brushless motor driver

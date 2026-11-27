@@ -37,6 +37,8 @@ generate_enterprise_dataset.py
 *.db
 *.lic
 *.log
+config/users.json
+Sisilic_OS_Hardware_Leads.csv
 
 # --- Confidential founder documents (STRICTLY EXCLUDED) ---
 build_founder_docs.py

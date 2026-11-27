@@ -14,6 +14,7 @@
 ![Database](https://img.shields.io/badge/Database-SQLite%20%2F%20PostgreSQL-336791)
 ![Security](https://img.shields.io/badge/Security-HWID%20%2B%20PBKDF2%2FTOTP-6f42c1)
 ![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11%20x64-0078D4)
+![Release](https://img.shields.io/badge/Release-v1.0.0-brightgreen)
 
 ---
 
@@ -42,15 +43,33 @@ not exist.
 | **Four-Role RBAC + TOTP MFA** | `ADMIN`, `REVIEWER`, `ANALYST`, `VIEWER` roles with PBKDF2-SHA256 password storage and RFC-6238 TOTP enrollment via QR code. |
 | **Hardware-Locked Offline Licensing** | HMAC-SHA256-signed `.lic` files bound to a 32-character HWID (CPU, motherboard, network identifiers). |
 
+## Screenshots (v1.0.0)
+
+| Actionable Work Queue | Sisilic Intelligence / Signals |
+|---|---|
+| ![Actionable Work Queue](screenshots/tab0_work_queue.png) | ![Sisilic Intelligence / Signals](screenshots/tab1_signals.png) |
+
+| BOM & Dependencies | System Config & Admin |
+|---|---|
+| ![BOM & Dependencies](screenshots/tab2_bom.png) | ![System Config & Admin](screenshots/tab3_settings.png) |
+
 ## Installation
 
 ### Download the Installer
 
 The official standalone installer is available as a GitHub Release asset:
 
-**📦 [SisilicOS_Setup_v1.0.0.exe](https://github.com/carnoba/Sisilic-OS-Showcase/releases/download/v1.0.0-MVP/SisilicOS_Setup_v1.0.0.exe)**
+**📦 [SisilicOS_Setup_v1.0.0.exe](https://github.com/carnoba/Sisilic-OS-Showcase/releases/latest)**
 
-Release: [v1.0.0-MVP — Sisilic OS v1.0.0 MVP Standalone Installer](https://github.com/carnoba/Sisilic-OS-Showcase/releases/tag/v1.0.0-MVP)
+Release: [v1.0.0 — Sisilic OS v1.0.0 Standalone Installer](https://github.com/carnoba/Sisilic-OS-Showcase/releases/tag/v1.0.0)
+
+### What's New in v1.0.0
+
+- Fixed frozen-build authentication and license verification (cached HWID, non-blocking worker).
+- Fixed BOM ingestion parser edge cases and exposed a realistic 34-component drone BOM sample.
+- Repaired all four tab layouts: no overlapping or collapsed group boxes, and no tab bleed-through.
+- Preserved 60+ FPS responsiveness: click-to-first-paint measured at **13.05 ms** (< 16 ms).
+- Hardened release hygiene: no proprietary source, `.lic`, `.db`, `.env`, or runtime user files in this showcase.
 
 ### System Requirements
 
@@ -88,6 +107,7 @@ The `sisilic_test_data/` directory contains standard BOM templates for testing a
 | `sisilic_test_data/STANDARD_BOM_TEMPLATE.csv` | Standard BOM import template (CSV) |
 | `sisilic_test_data/STANDARD_BOM_TEMPLATE.xlsx` | Standard BOM import template (Excel) |
 | `sisilic_test_data/open_hardware_boms/` | Sample open-hardware BOMs for evaluation |
+| `sample_data/demo_drone_flight_controller_bom.csv` | Realistic 34-component drone flight-controller BOM for dependency-resolution testing |
 
 See the BOM Ingestion Guide in the application UI under **BOM & Dependencies → Import BOM**.
 
@@ -111,14 +131,14 @@ Sisilic OS is built around these non-negotiable data rules:
 | Contracts | jsonschema |
 | Graph analysis | networkx, numpy |
 | MFA provisioning | segno |
-| Packaging | PyInstaller, Inno Setup 6 |
+| Packaging | PyInstaller, Inno Setup 7 |
 
 ## Security & Responsible Disclosure
 
 - Passwords are stored as PBKDF2-SHA256 tokens (260,000 iterations, per-user salt).
 - TOTP MFA is optional per user (RFC-6238).
 - Licenses are HMAC-SHA256 signed and bound to machine HWID.
-- `.env`, `*.db`, `*.lic`, and build outputs are never committed.
+- `.env`, `*.db`, `*.lic`, `config/users.json`, proprietary source, and build outputs are never committed.
 
 **Production hardening checklist:**
 - [ ] Set a strong, private `SISILIC_LICENSE_SECRET`
